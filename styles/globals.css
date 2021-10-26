@@ -1,0 +1,174 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 22px;
+  background-color: aliceblue;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  
+}
+
+ul {
+  list-style: none;
+}
+
+.center{
+  align-self: center;
+  text-align: center;
+}
+/* //! Paragraphs-light */
+
+.p1w, .p1d, .g1{ font-size: 0.8rem; }
+.p2w, .p2d, .g2{ font-size: 1.4rem; }
+.p3w, .p3d, .g3{ font-size: 1.8rem; }
+.p1w, .p2w, .p3w{ color: #fff; }
+.p1d, .p2d, .p3d{ color: rgb(19, 22, 2); }
+.g1, .g2, .g3{ color: rgb(119, 118, 89); }
+
+/* //! Headings-Light */
+.h1w, .h1d{
+  font-size: 0.8rem;
+  font-weight: 1.5rem;
+  line-height: 1.15;
+}
+.h2w, .h2d{
+  font-size: 1.5rem;
+  font-weight: 1.8rem;
+  line-height: 1.15;
+}
+.h3w, .h3d {
+  font-size: 2rem;
+  font-weight: 2rem;
+  line-height: 1.15;
+}
+.h1w, .h2w, .h3w{ color: white; }
+.h1d, .h2d, .h3d{ color: rgb(19, 22, 2); }
+
+
+.section{
+  margin: 50px 100px ;
+  max-width: 1100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+hr {
+  border: 1px solid #160836;
+  width: 40%;
+  border-radius: 5px;
+  margin-bottom: 50px;
+}
+
+/* !! Table Styles */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table td, table th{
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+table tr:nth-child(even){background-color: #f2f2f2;}
+
+table tr:hover{background-color: #ddd}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align:left;
+  background-color: #4642f8;
+  color: white;
+}
+
+
+
+
+.btn{
+  padding: 8px 14px;
+   background-color: #4642f8;
+  color: white;
+  border-style: none;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+.btnClose{
+  padding: 8px 14px;
+  background-color: #ad0909;
+  color: white;
+  border-style: none;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.btn:hover{
+  padding: 8px 18px;
+   background-color: white;
+  color: #4642f8;
+  border-style: solid;
+  border-radius: 5px;
+  font-size: 1rem;
+  border-width: 1px;
+  border-color: #4642f8;
+}
+.btnClose:hover{
+  padding: 8px 18px;
+   background-color: white;
+  color: #ad0909;
+  border-style: solid;
+  border-radius: 5px;
+  font-size: 1rem;
+  border-width: 1px;
+  border-color: #ad0909;
+}
+
+
+
+@media(max-width: 700px) {
+  html, body{
+    font-size: 18px;
+  }
+  .section{
+    margin: 30px 50px ;
+   
+  }
+  
+  hr {
+    display: none;
+   }
+}
+
+
+@media(max-width: 500px) {
+  html, body{
+    font-size: 14px;
+  }
+
+  .section{
+    margin: 30px 50px ;
+   
+  }
+
+  hr {
+   display: none;
+  }
+}
+
+#check:checked ~ .nav_bg{
+  left: 50%;
+
+}

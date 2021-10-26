@@ -1,0 +1,101 @@
+.content {
+  min-height: 80vh;
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  grid-row-gap: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px 20px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  margin: 0 0px;
+}
+
+.left_side {
+  text-align: center;
+}
+
+.right_side {
+  text-align: center;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.details {
+  padding-bottom: 20px;
+  font-size: 0.8rem;
+}
+
+.topic {
+  font-weight: 600;
+  color: #725110;
+}
+.text {
+  font-weight: 300;
+  color: #867757;
+}
+
+.input_box {
+  height: 50px;
+  width: 100%;
+  margin: 15px 0;
+}
+
+.textarea_box textarea,
+.input_box input {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  background: #e4dccb;
+  font-weight: 500;
+  font-size: 0.7rem;
+  padding: 0 15px;
+}
+
+.textarea_box {
+  min-height: 110px;
+}
+
+.textarea_box textarea {
+  min-height: 100px;
+  min-width: 100%;
+  padding: 15px 15px;
+}
+
+.btn {
+  font-size: 0.9rem;
+  color: #fff;
+  border: none;
+  background-color: #4642f8;
+  border-radius: 5px;
+  padding: 8px 20px;
+  outline-style: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #4642f8;
+}
+.send_btn {
+  margin-top: 20px;
+}
+
+.icon {
+  color: #4642f8;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 600px) {
+  .content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 500px) {
+  .content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
